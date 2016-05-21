@@ -1,0 +1,9 @@
+@import '1st_load_framework';
+@import 'variables_and_mixins';
+@import 'site/*';
+
+#site-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #eee;
+}

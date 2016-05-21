@@ -10,6 +10,9 @@ gem 'jbuilder', '~> 2.0'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'guard'
+  gem 'rb-fsevent'
+  gem 'guard-livereload'
 end
 
 group :development do
