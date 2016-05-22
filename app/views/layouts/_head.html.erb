@@ -8,4 +8,4 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body<%= content_for?(:body_class) ? " class=#{yield(:body_class)} " : nil %>>
+  <body<%= content_for?(:body_class) ? " class=#{yield(:body_class)} " : nil %> <%= content_for?(:body_id) ? " id=#{yield(:body_id)} " : nil %>>
