@@ -1,0 +1,7 @@
+en:
+  ticket_categories:
+    index: 'Ticket categories'
+    show: 'Ticket category'
+    new: 'New category'
+    edit: 'Edit category'
+    delete: 'Delete category'

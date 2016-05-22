@@ -1,0 +1,9 @@
+<%= content_for :title, @ticket_category.name %>
+
+<%= simple_format(@ticket_category.description) unless @ticket_category.description.nil? %>
+
+<% if (can? :update, @ticket_category) %>
+  <p class="text-right">
+    <%= link_to "#{t('actions.edit')} <i class='edit icon'></i>".html_safe, edit_admin_ticket_category_path(@ticket_category), class: 'btn btn-link' %>
+  </p>
+<% end %>
