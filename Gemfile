@@ -29,7 +29,9 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'bootstrap-sass'
 gem 'devise'
+gem 'cancancan'
+gem 'rolify'
 gem 'simple_form'
+gem 'bootstrap-sass'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'

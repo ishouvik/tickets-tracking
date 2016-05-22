@@ -57,6 +57,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
+    cancancan (1.13.1)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -177,6 +178,7 @@ GEM
       ffi (>= 0.5.0)
     responders (2.2.0)
       railties (>= 4.2.0, < 5.1)
+    rolify (5.1.0)
     sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -221,6 +223,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   bootstrap-sass
+  cancancan
   coffee-rails (~> 4.1.0)
   devise
   guard
@@ -234,6 +237,7 @@ DEPENDENCIES
   rails_12factor
   rails_layout
   rb-fsevent
+  rolify
   sass-rails (~> 5.0)
   semantic-ui-sass!
   simple_form
