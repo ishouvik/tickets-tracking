@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :ticket_categories, only: [:index, :show], path: 'categories'
   end
 
-  scope module: 'admin', path: '/admin', as: :admin do
+  namespace :admin do
     get 'dashboard', to: 'dashboard#index', as: :dashboard
     resources :users
 
