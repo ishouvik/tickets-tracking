@@ -1,0 +1,11 @@
+<%= content_for :title, t('users.index') %>
+
+<table class="table table-striped">
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <%= render user %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

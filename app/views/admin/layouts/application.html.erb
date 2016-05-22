@@ -1,0 +1,14 @@
+<%= content_for :body_id, 'default' %>
+<%= render 'layouts/head' %>
+<%= render 'layouts/header' %>
+<messages><%= render 'layouts/messages' %></messages>
+<main role="main" class="container">
+  <div class="row">
+    <div id="site-admin-main-area" class="col-md-9"><%= yield %></div>
+
+    <div id="site-admin-sidebar" class="col-md-3">
+      <%= render 'admin/layouts/shared/sidebar' %>
+    </div>
+  </div>
+</main>
+<%= render 'layouts/footer' %>

@@ -4,5 +4,10 @@ Rails.application.routes.draw do
   get 'static_pages/about_us'
   get 'static_pages/contact_us'
   devise_for :users
-  resources :users
+
+
+  scope module: 'admin', path: '/admin', as: :admin do
+    get 'dashboard', to: 'dashboard#index', as: :dashboard
+    resources :users
+  end
 end

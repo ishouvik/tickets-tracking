@@ -1,0 +1,6 @@
+en:
+  users:
+    index: 'Users'
+    new: 'Create user'
+    edit: 'Edit user'
+    delete: 'Delete user'

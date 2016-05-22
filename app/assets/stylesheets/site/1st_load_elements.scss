@@ -1,5 +1,5 @@
 #site-logo {
-  margin: 5px;  
+  margin: 5px;
 }
 
 #site-title {
@@ -22,4 +22,10 @@
       @extend .sr-only;
     }
   }
+}
+
+#site-admin-sidebar {
+  @extend main;
+  padding-bottom: 0;
+  border-left: 1px solid #eee;
 }
