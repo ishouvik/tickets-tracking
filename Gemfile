@@ -23,13 +23,13 @@ group :development do
   gem 'rails_layout'
 end
 
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'high_voltage'
-gem 'simple_form'
-
 group :production do
   gem 'pg'
   gem 'puma'
   gem 'rails_12factor'
 end
+
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'simple_form'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'

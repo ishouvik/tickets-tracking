@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/doabit/semantic-ui-sass.git
+  revision: ec431aa90c80ed6b86e934ff955daf8037bee713
+  specs:
+    semantic-ui-sass (2.1.8.0)
+      sass (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -91,7 +98,6 @@ GEM
       guard (~> 2.8)
       guard-compat (~> 1.0)
       multi_json (~> 1.8)
-    high_voltage (3.0.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     jbuilder (2.4.1)
@@ -219,7 +225,6 @@ DEPENDENCIES
   devise
   guard
   guard-livereload
-  high_voltage
   jbuilder (~> 2.0)
   jquery-rails
   pg
@@ -230,6 +235,7 @@ DEPENDENCIES
   rails_layout
   rb-fsevent
   sass-rails (~> 5.0)
+  semantic-ui-sass!
   simple_form
   spring
   sqlite3

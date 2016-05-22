@@ -1,25 +1,3 @@
 @import '1st_load_framework';
 @import 'variables_and_mixins';
 @import 'site/*';
-
-#site-title {
-  h1 {
-    margin: 0;
-    padding: 5px 0;
-    font-size: 130%;
-  }
-}
-
-#site-footer {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: #eee;
-}
-
-#full-width {
-  #site-header {
-    #site-title {
-      @extend .sr-only;
-    }
-  }
-}
