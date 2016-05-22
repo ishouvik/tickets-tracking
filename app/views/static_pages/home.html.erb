@@ -1,0 +1,21 @@
+<%= content_for :title, t('static_pages.home') %>
+<%= content_for :body_class, 'static_pages_home' %>
+
+<div class="intro">
+  <div class="container">
+    <h1 class="text-center sr-only"><%= t('site.name') %></h1>
+    <p class="lead sr-only"><%= t('site.description') %></p>
+  </div>
+</div>
+
+<div class="tagline">
+  <div class="contrainer">
+    <h1 class="text-center"><%= t('site.tagline') %></h1>
+  </div>
+</div>
+
+<% unless user_signed_in? %>
+  <div class="register">
+    <p class="text-center"><%= link_to t('devise.registrations.new'), new_user_registration_path, class: 'massive ui button black' %></p>
+  </div>
+<% end %>
