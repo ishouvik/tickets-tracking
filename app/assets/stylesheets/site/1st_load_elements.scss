@@ -29,3 +29,13 @@
   padding-bottom: 0;
   border-left: 1px solid #eee;
 }
+
+.alert-fixed {
+    position:absolute;
+    top: 10%;
+    left: 0px;
+    width: 100%;
+    z-index:9999;
+    border-radius: 0px;
+    opacity: 0.95;
+}

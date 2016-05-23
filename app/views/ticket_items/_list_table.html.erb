@@ -1,0 +1,25 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% ticket_items.each do |ticket_item| %>
+      <tr>
+        <td width="90%"><%= link_to ticket_item.title, ticket_item %></td>
+        <% if current_user.has_role? :admin %>
+          <td><%= link_to t('actions.edit'),   edit_admin_ticket_item_path(ticket_item) %></td>
+          <td><%= link_to t('actions.delete'), [:admin, ticket_item], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+          <td><%= link_to t('actions.edit'),   edit_ticket_item_path(ticket_item) %></td>
+          <td><%= link_to t('actions.delete'), ticket_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div id="ticket-items-pagination"><%= paginate ticket_items.page(params[:page]) %></div>

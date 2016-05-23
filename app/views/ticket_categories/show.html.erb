@@ -1,0 +1,9 @@
+<%= content_for :title, @ticket_category.name %>
+
+<%= simple_format(@ticket_category.description) unless @ticket_category.description.nil? %>
+
+<%= link_to t('actions.edit'), edit_admin_ticket_category_path(@ticket_category) if (can? :update, @ticket_category) %>
+
+<hr>
+
+<%= render 'ticket_items/list_table', ticket_items: @ticket_category.items %>

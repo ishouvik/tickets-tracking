@@ -1,0 +1,26 @@
+<%= content_for :title, t('ticket_categories.index') %>
+
+<% if can? :create, TicketCategory.new %>
+  <div class="row">
+    <p class="text-right"><%= link_to t('ticket_categories.new'), new_admin_ticket_category_path, class: 'ui button black' %></p>
+  </div>
+<% end %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th width="95%">Name</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ticket_categories.each do |ticket_category| %>
+      <tr>
+        <td><%= link_to ticket_category.name, [:admin, ticket_category] %></td>
+        <td><%= link_to "<i class='edit icon'></i>".html_safe, edit_admin_ticket_category_path(ticket_category) %></td>
+        <td><%= link_to "<i class='trash icon'></i>".html_safe, [:admin, ticket_category], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

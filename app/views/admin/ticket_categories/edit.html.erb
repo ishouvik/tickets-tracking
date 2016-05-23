@@ -1,0 +1,5 @@
+<%= content_for :title, "#{t('actions.edit')} #{@ticket_category.name}" %>
+
+<%= render 'form' %>
+
+<p class="text-right"><%= link_to t('actions.show'), [:admin, @ticket_category], class: 'btn btn-link' %></p>
