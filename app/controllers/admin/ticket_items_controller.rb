@@ -6,7 +6,7 @@ class Admin::TicketItemsController < Admin::BaseController
   # GET /ticket_items
   # GET /ticket_items.json
   def index
-    @ticket_items = TicketItem.all
+    @ticket_items = TicketItem.sorted
   end
 
   # GET /ticket_items/1

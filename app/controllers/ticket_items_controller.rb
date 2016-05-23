@@ -4,7 +4,7 @@ class TicketItemsController < ApplicationController
   # GET /ticket_items
   # GET /ticket_items.json
   def index
-    @ticket_items = current_user.tickets.sorted.page(params[:page])
+    @ticket_items = current_user.tickets.sorted
   end
 
   # GET /ticket_items/1
