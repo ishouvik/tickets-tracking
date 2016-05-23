@@ -69,6 +69,6 @@ class TicketItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ticket_item_params
-      params.require(:ticket_item).permit(:title, :description)
+      params.require(:ticket_item).permit(:category_id, :title, :description)
     end
 end

@@ -1,7 +1,7 @@
 <%= content_for :title, @ticket_item.title %>
 
 <p class="text-muted">
-  Posted by: <%= @ticket_item.user.name %>
+  Posted by: <%= @ticket_item.user.name %> on <%= link_to @ticket_item.category.name, @ticket_item.category %>
 </p>
 
 <%= simple_format(@ticket_item.description) unless @ticket_item.description.nil? %>
