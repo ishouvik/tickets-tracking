@@ -11,6 +11,9 @@ class User < ActiveRecord::Base
   # Validations
   validates :name, presence: true, length: { in: 3..50 }
 
+  # Associations
+  has_many :tickets, class_name: 'TicketItem'
+
   private
     def add_user_role
       self.add_role :user

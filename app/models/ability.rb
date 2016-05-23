@@ -8,6 +8,7 @@ class Ability
       can :manage, :all
     elsif user.has_role? :user
       can :read, :all
+      can :manage, TicketItem, user: user
     else
       can :read, :all
     end

@@ -1,0 +1,9 @@
+<%= content_for :title, t('ticket_items.index') %>
+
+<% if can? :create, current_user.tickets.new %>
+  <div class="row">
+    <p class="text-right"><%= link_to t('ticket_items.new'), new_ticket_item_path, class: 'ui button right black' %></p>
+  </div>
+<% end %>
+
+<%= render 'list_table', ticket_items: @ticket_items %>

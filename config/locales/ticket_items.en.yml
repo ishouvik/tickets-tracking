@@ -1,0 +1,7 @@
+en:
+  ticket_items:
+    index: 'Tickets'
+    show: 'Ticket'
+    new: 'Raise new ticket'
+    edit: 'Edit ticket'
+    delete: 'Delete ticket'

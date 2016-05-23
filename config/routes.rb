@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   scope 'tickets' do
-    resources :ticket_categories, only: [:index, :show], path: 'categories'
+    resources :ticket_categories, path: 'categories', only: [:index, :show]
+    resources :ticket_items,      path: '/'
   end
 
   namespace :admin do
@@ -16,6 +17,7 @@ Rails.application.routes.draw do
 
     scope 'tickets' do
       resources :ticket_categories, path: 'categories'
+      resources :ticket_items,      path: '/',     except: [:new, :create]
     end
   end
 end

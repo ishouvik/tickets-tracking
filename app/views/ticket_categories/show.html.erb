@@ -2,4 +2,4 @@
 
 <%= simple_format(@ticket_category.description) unless @ticket_category.description.nil? %>
 
-<%= link_to 'Edit', edit_admin_ticket_category_path(@ticket_category) if (can? :update, @ticket_category) %>
+<%= link_to t('actions.edit'), edit_admin_ticket_category_path(@ticket_category) if (can? :update, @ticket_category) %>
