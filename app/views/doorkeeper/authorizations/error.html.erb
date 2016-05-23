@@ -1,0 +1,3 @@
+<%= content_for :title, t('doorkeeper.authorizations.error.title') %>
+
+<pre><%= @pre_auth.error_response.body[:error_description] %></pre>

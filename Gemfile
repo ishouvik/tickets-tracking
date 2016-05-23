@@ -37,3 +37,6 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'bootstrap-sass'
 gem 'kaminari'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+
+gem 'versionist'
+gem 'doorkeeper'
