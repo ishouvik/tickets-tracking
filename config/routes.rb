@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-
-
   use_doorkeeper
   root to: 'static_pages#home'
   get 'static_pages/home'
