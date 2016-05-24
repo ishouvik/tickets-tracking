@@ -22,7 +22,15 @@ Rails.application.routes.draw do
   end
 
   api_version(:module => "V1", :path => {:value => "api/v1"}, :defaults => {:format => "json"}, :default => true) do
-    mount_devise_token_auth_for 'User', at: 'auth'
+    mount_devise_token_auth_for 'User', at: 'auth', controllers: {
+      confirmations:      'devise_token_auth/confirmations',
+      passwords:          'devise_token_auth/passwords',
+      omniauth_callbacks: 'devise_token_auth/omniauth_callbacks',
+      registrations:      'devise_token_auth/registrations',
+      sessions:           'devise_token_auth/sessions',
+      token_validations:  'devise_token_auth/token_validations'
+
+    }
     scope 'tickets' do
       resources :ticket_categories, path: 'categories'
     end
