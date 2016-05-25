@@ -1,4 +1,4 @@
-<% if user_signed_in? %>
+<% unless current_user.nil? %>
   <%= link_to t('ticket_items.index'),       main_app.ticket_items_path, class: 'ui item' %>
   <%= link_to 'Edit account',                main_app.edit_user_registration_path, class: 'ui item' %>
   <%= link_to 'Sign out',                    main_app.destroy_user_session_path, :method=>'delete', class: 'ui item' %>
