@@ -1,6 +1,5 @@
 class TicketCategoriesController < ApplicationController
   before_action :set_ticket_category, only: :show
-
   authorize_resource
 
   # GET /ticket_categories

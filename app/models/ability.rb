@@ -10,8 +10,8 @@ class Ability
       can :read, :all
       can :manage, TicketItem, user: user
     else
-      can :read, :all
+      can    :read, :all
+      cannot :read, TicketCategory
     end
-
   end
 end

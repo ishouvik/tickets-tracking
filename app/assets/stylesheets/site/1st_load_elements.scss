@@ -16,6 +16,10 @@
   background: #eee;
 }
 
+#site-header {
+  #site-title { @extend .page-header; }
+}
+
 #full-width {
   #site-header {
     #site-title {

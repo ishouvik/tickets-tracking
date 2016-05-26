@@ -1,6 +1,7 @@
 <div class="ui fluid vertical menu">
-  <%= link_to 'Home',                       admin_dashboard_path,         class: 'item' %>
-  <%= link_to t('users.index'),             admin_users_path,             class: 'item' %>
-  <%= link_to t('ticket_items.index'),      admin_ticket_items_path,      class: 'item' %>
-  <%= link_to t('ticket_categories.index'), admin_ticket_categories_path, class: 'item' %>
+  <%= link_to 'Home',                       main_app.admin_dashboard_path,         class: 'item' %>
+  <%= link_to t('users.index'),             main_app.admin_users_path,             class: 'item' %>
+  <%= link_to t('ticket_items.index'),      main_app.admin_ticket_items_path,      class: 'item' %>
+  <%= link_to t('ticket_categories.index'), main_app.admin_ticket_categories_path, class: 'item' %>
+  <%= link_to 'Applications',               oauth_applications_path,               class: 'item' %>
 </div>
