@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/doabit/semantic-ui-sass.git
-  revision: ec431aa90c80ed6b86e934ff955daf8037bee713
+  revision: b2508cabc1e73780a340cb71f528066d7a5987d3
   specs:
     semantic-ui-sass (2.1.8.0)
       sass (>= 3.2)
@@ -282,7 +282,7 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 RUBY VERSION
-   ruby 2.2.4p230
+   ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.4
+   1.12.5

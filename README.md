@@ -6,7 +6,7 @@ This is a simple Ticket tracking app. I created this just for fun. So, feel free
 Please post them under the [issues](https://github.com/ishouvik/tickets-tracking/issues) tab
 
 ## Dependencies
-- Ruby 2.2.1
+- Ruby 2.3.1
 - Rails 4.2.5.1
 
 ## Front-end libraries
