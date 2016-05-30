@@ -1,10 +1,6 @@
 # Ticket tracking App
 This is a simple Ticket tracking app. I created this just for fun. So, feel free to clone the repo and play around
 
-
-## Questions/Ideas?
-Please post them under the [issues](https://github.com/ishouvik/tickets-tracking/issues) tab
-
 ## Dependencies
 - Ruby 2.3.1
 - Rails 4.2.5.1
@@ -12,6 +8,26 @@ Please post them under the [issues](https://github.com/ishouvik/tickets-tracking
 ## Front-end libraries
 - Bootstrap
 - Semantic UI
+
+## Installation
+- Clone this repo
+- Run the bundler `bundle install`
+- Setup database `bundle exec rake db:setup`
+
+## Setup instructions
+### User accounts
+| Name  | Email | Password | Roles |
+|:------|:------|:---------|:-----:|
+| Admin User | admin@example.com | password | `admin`, `user` |
+| John Doe | johndoe@example.com | password | `user` |
+
+### Mail Delivery
+Mail delivery is disabled for development environment is disabled you can change this behaviour by setting the config flag for `config.action_mailer.perform_deliveries` to `true`
+
+
+## Questions/Ideas?
+Please post them under the [issues](https://github.com/ishouvik/tickets-tracking/issues) tab
+
 
 ## Credits
 - Created using [RailsComposer](https://github.com/RailsApps/rails-composer)
