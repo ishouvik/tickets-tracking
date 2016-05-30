@@ -24,6 +24,9 @@ This is a simple Ticket tracking app. I created this just for fun. So, feel free
 ### Mail Delivery
 Mail delivery is disabled for development environment. You can change this behavior by setting the config flag for `config.action_mailer.perform_deliveries` to `true` on `config/environments/development.rb`
 
+### Web services
+This app allows developers to expose functionality to other web sites and desktop applications along with doing integrations with third-party web applications.
+For further API reference please check out our [API Wiki](https://github.com/ishouvik/tickets-tracking/wiki/API:-Intoduction)
 
 ## Questions/Ideas?
 Please post them under the [issues](https://github.com/ishouvik/tickets-tracking/issues) tab
