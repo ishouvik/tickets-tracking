@@ -4,11 +4,10 @@ class V1::TicketCategoriesController < V1::BaseController
 
   def index
     @ticket_categories = TicketCategory.all
-    render json: @ticket_categories
   end
 
   def show
-    render json: @ticket_category
+    # render @ticket_category
   end
 
   def create
