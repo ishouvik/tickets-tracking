@@ -22,7 +22,7 @@ This is a simple Ticket tracking app. I created this just for fun. So, feel free
 | John Doe | johndoe@example.com | password | `user` |
 
 ### Mail Delivery
-Mail delivery is disabled for development environment is disabled you can change this behaviour by setting the config flag for `config.action_mailer.perform_deliveries` to `true`
+Mail delivery is disabled for development environment. You can change this behavior by setting the config flag for `config.action_mailer.perform_deliveries` to `true`
 
 
 ## Questions/Ideas?
