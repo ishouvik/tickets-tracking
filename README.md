@@ -1,5 +1,6 @@
 # Ticket tracking App
-This is a simple Ticket tracking app. I created this just for fun. So, feel free to clone the repo and play around
+Master branch: [travis-build-master]: https://api.travis-ci.org/ishouvik/tickets-tracking.svg?branch=master "Travis Build Master Branch" | Develop branch: [travis-build-master]: https://api.travis-ci.org/ishouvik/tickets-tracking.svg?branch=develop "Travis Build Develop Branch"
+This is a simple Ticket tracking app. I created this just for fun. So, feel free to clone the repo and play around.
 
 ## Dependencies
 - Ruby 2.3.1
