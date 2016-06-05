@@ -1,5 +1,5 @@
 # Ticket tracking App
-Master branch: [travis-build-master]: https://api.travis-ci.org/ishouvik/tickets-tracking.svg?branch=master "Travis Build Master Branch" | Develop branch: [travis-build-master]: https://api.travis-ci.org/ishouvik/tickets-tracking.svg?branch=develop "Travis Build Develop Branch"
+Master branch: ![travis-build-master]: (https://api.travis-ci.org/ishouvik/tickets-tracking.svg?branch=master) | Develop branch: ![travis-build-master]: (https://api.travis-ci.org/ishouvik/tickets-tracking.svg?branch=develop)
 This is a simple Ticket tracking app. I created this just for fun. So, feel free to clone the repo and play around.
 
 ## Dependencies
